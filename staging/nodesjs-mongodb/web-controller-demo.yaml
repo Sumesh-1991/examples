@@ -16,8 +16,8 @@ spec:
       containers:
       - image: node:0.10.40
         command: ['/bin/sh', '-c']
-        args: ['cd /home && git clone https://github.com/ijason/NodeJS-Sample-App.git demo && cd demo/EmployeeDB/ && npm install && sed -i -- ''s/localhost/mongo/g'' app.js && node app.js']
+        args: ['cd /home && git clone https://github.com/Sumesh-1991/NodeJS-Sample-App.git demo && cd demo/EmployeeDB/ && npm install && sed -i -- ''s/localhost/mongo/g'' app.js && node app.js']
         name: web
         ports:
-        - containerPort: 3000
+        - containerPort: 8888
           name: http-server
