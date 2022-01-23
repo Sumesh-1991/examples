@@ -17,5 +17,5 @@ spec:
       - image: devops/employee
         name: web
         ports:
-        - containerPort: 8888
+        - containerPort: 3000
           name: http-server
