@@ -23,6 +23,6 @@ spec:
               mountPath: /data/db
       volumes:
         - name: mongo-persistent-storage
-          gcePersistentDisk:
-            pdName: mongo-disk
+          awsElasticBlocStore:
+            volumeID: aws://ap-southeast-1/
             fsType: ext4
